@@ -61,7 +61,7 @@ $mamy = $_SESSION["noms"];
                     <option value="exomodule4">Module 4</option>
                 </select>
                 <select class="form-control text-center form-outline-primary form-block mb-2 mt-2" id="sel3">
-                    <option id="co">Correction</option>
+                    <option>Correction</option>
                     <option value="correctionmodule1">Module 1</option>
                     <option value="correctionmodule2">Module 2</option>
                     <option value="correctionmodule3">Module 3</option>
@@ -73,7 +73,7 @@ $mamy = $_SESSION["noms"];
         </div>
         <div class="col-7 col-sm-7">
             <div   class="form-group shadow border p-4 mt-2" style="height:100%;  background-image:url('<?= URL; ?>publics/photos/livre.jpg'); background-size:cover; ">
-                <div id="contenu" class="content" style="overflow: auto;"></div>
+                <div id="contenu" class="content" style="overflow: auto;></div>
             </div>
         </div>
         <div class="col-sm-1"></div>

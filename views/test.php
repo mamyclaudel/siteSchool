@@ -73,22 +73,62 @@
         <div class="col-7 col-sm-7">
             <div   class="form-group shadow border p-4 mt-2" style="height:100%;">
                 <div id="contenu" class="content">
-                    <div class="row">
-                        <div class="col-sm-2"></div>
-                        <div class="col-sm-1"><img style="width: 50px;" src="../publics/photos/phone.jpg" alt="phone"/></div>
-                        <div class="col-sm-7">
-                        <a href="tel:+261348658908" class="btn btn-outline-primary btn-block">Call</a>
-                        </div>
-                        <div class="col-sm-2"></div>
-                    </div>
-                    <div class="row mt-2">
-                        <div class="col-sm-2"></div>
-                        <div class="col-sm-1"><img style="width: 50px;" src="../publics/photos/mail.jpg" alt="phone"/></div>
-                        <div class="col-sm-7">
-                        <a href="mailto:claudel.ceres.p4@gmail.com" class="btn btn-outline-primary btn-block">Email</a>
-                        </div>
-                        <div class="col-sm-2"></div>
-                    </div>
+
+                            <div class="row ">
+                                <div class="col-sm-3 border m-2">
+                                    <div class="row" style="width:100%; height:50px;"></div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <button id="pdf" class="btn btn-outline-secondary btn-block mb-2">Pdf</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <button id="explication" class="btn btn-outline-secondary btn-block">Explication</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 border m-2">
+                                    <div class="row" style="width:100%; height:50px;"></div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <button id="pdf" class="btn btn-outline-secondary btn-block mb-2">Pdf</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <button id="explication" class="btn btn-outline-secondary btn-block">Explication</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 border m-2">
+                                    <div class="row" style="width:100%; height:50px;"></div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <button id="pdf" class="btn btn-outline-secondary btn-block mb-2">Pdf</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <button id="explication" class="btn btn-outline-secondary btn-block">Explication</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 border m-2">
+                                    <div class="row" style="width:100%; height:50px;"></div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <button id="pdf" class="btn btn-outline-secondary btn-block mb-2">Pdf</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <button id="explication" class="btn btn-outline-secondary btn-block">Explication</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
                 <!-- <a href="<../views/paiement.php" class="btn btn-outline-primary btn-block">Payment</a>
                 <a href="<../views/paiement.php" class="btn btn-outline-primary btn-block">Payment</a>
                 <a href="<../views/paiement.php" class="btn btn-outline-primary btn-block">Payment</a>
