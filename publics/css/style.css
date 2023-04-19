@@ -1,0 +1,22 @@
+@media only screen and (max-width: 567px){
+    #inscription{
+        flex-direction: column-reverse;
+    }
+
+    #logo{
+        position:absolute;
+        width: 100px;
+        margin-left: 350px;
+    }
+
+    #paiement{
+        flex-direction: column-reverse;
+    }
+}
+
+span{
+    color:blue;
+    font-style: italic;
+    font-weight: bold;
+
+}
