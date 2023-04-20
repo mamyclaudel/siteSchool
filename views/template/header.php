@@ -6,6 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?php echo URL; ?>publics/bs4/css/bootstrap.css" />
     <link rel="stylesheet" href="<?php echo URL; ?>publics/css/style.css" />
-    <title>Plateform</title>
+    <title>siteSchool</title>
 </head>
 <body>

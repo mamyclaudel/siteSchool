@@ -216,60 +216,68 @@ selt1.addEventListener("change", function(event){
     //console.log(this.value)
     
     if(this.value === "coursmodule1"){
-        var coursmodule1 = `<h2 class="text-center text-primary pb-4" style="border-bottom-style:ridge; margin-bottom:4px; font-style:italic">LES COURS DU MODULE I :</h2>
-        <div class="row ">
-            <div class="col-sm-3 border m-2">
-                <div class="row" style="width:100%; height:50px;"></div>
+        var coursmodule1 = `<h2 class="text-center text-primary pb-4" style="border-bottom-style:ridge; margin-bottom:4px; font-style:italic, position:absolute;">LES COURS DU MODULE I :</h2>
+        <div class="row pl-2">
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">HTML</h6>
+                <div class="row" style="height:100px; background-image: url('<?php echo URL; ?>publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2">Pdf</button>
+                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explication" class="btn btn-outline-secondary btn-block">Explication</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 border m-2">
-                <div class="row" style="width:100%; height:50px;"></div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2">Pdf</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <button id="explication" class="btn btn-outline-secondary btn-block">Explication</button>
+                        <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3 border m-2">
-                <div class="row" style="width:100%; height:50px;"></div>
+
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">CSS</h6>
+                <div class="row" style="height:100px; background-image:url('../publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2">Pdf</button>
+                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explication" class="btn btn-outline-secondary btn-block">Explication</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 border m-2">
-                <div class="row" style="width:100%; height:50px;"></div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2">Pdf</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <button id="explication" class="btn btn-outline-secondary btn-block">Explication</button>
+                        <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                     </div>
                 </div>
             </div>
+
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">Framework</h6>
+                <div class="row" style="height:100px; background-image:url('../publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">Responsive</h6>
+                <div class="row" style="height:100px; background-image:url('../publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
         `;
         contenuselt.innerHTML = coursmodule1;
@@ -279,56 +287,18 @@ selt1.addEventListener("change", function(event){
         var coursmodule2 = `
             <h2 class="text-center text-primary pb-4" style="border-bottom-style:ridge; margin-bottom:4px; font-style:italic">LES COURS DU MODULE II :</h2>
 
-            <div class="row">
-                <div class="col-sm-3 border m-2">
-                    <div class="row" style="width:100%; height:50px;"></div>
+            <div class="row pl-2">
+                <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                    <h6 class="text-center mt-2">JavaScript</h6>
+                    <div class="row" style="height:100px; background-image:url('<?php echo URL; ?>publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
                     <div class="row">
                         <div class="col-sm-12">
-                            <button id="pdf" class="btn btn-outline-secondary btn-block mb-2">Pdf</button>
+                            <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
-                            <button id="explication" class="btn btn-outline-secondary btn-block">Explication</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 border m-2">
-                    <div class="row" style="width:100%; height:50px;"></div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <button id="pdf" class="btn btn-outline-secondary btn-block mb-2">Pdf</button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <button id="explication" class="btn btn-outline-secondary btn-block">Explication</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 border m-2">
-                    <div class="row" style="width:100%; height:50px;"></div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <button id="pdf" class="btn btn-outline-secondary btn-block mb-2">Pdf</button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <button id="explication" class="btn btn-outline-secondary btn-block">Explication</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 border m-2">
-                    <div class="row" style="width:100%; height:50px;"></div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <button id="pdf" class="btn btn-outline-secondary btn-block mb-2">Pdf</button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <button id="explication" class="btn btn-outline-secondary btn-block">Explication</button>
+                            <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                         </div>
                     </div>
                 </div>
@@ -340,30 +310,33 @@ selt1.addEventListener("change", function(event){
 
     else if(selt1.value === "coursmodule3"){
         var coursmodule3 = `<h2 class="text-center text-primary pb-4" style="border-bottom-style:ridge; margin-bottom:4px; font-style:italic">LES COURS DU MODULE III :</h2>
-        <div class="row ">
-            <div class="col-sm-3 border m-2">
-                <div class="row" style="width:100%; height:50px;"></div>
+        <div class="row pl-2">
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">PHP</h6>
+                <div class="row" style="height:100px; background-image:url('<?php echo URL; ?>publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2">Pdf</button>
+                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explication" class="btn btn-outline-secondary btn-block">Explication</button>
+                        <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3 border m-2">
-                <div class="row" style="width:100%; height:50px;"></div>
+
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">SGBD</h6>
+                <div class="row" style="height:100px; background-image:url('<?php echo URL; ?>publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2">Pdf</button>
+                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explication" class="btn btn-outline-secondary btn-block">Explication</button>
+                        <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                     </div>
                 </div>
             </div>
@@ -375,47 +348,67 @@ selt1.addEventListener("change", function(event){
 
     else if(selt1.value === "coursmodule4"){
         var coursmodule4 = `<h2 class="text-center text-primary pb-4" style="border-bottom-style:ridge; margin-bottom:4px; font-style:italic">LES COURS DU MODULE IV :</h2>
-        <div class="row ">
-        <div class="col-sm-3 border m-2">
-                <div class="row" style="width:100%; height:50px;"></div>
+        <div class="row pl-2">
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">PHP</h6>
+                <div class="row" style="height:100px; background-image:url('<?php echo URL; ?>publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2">Pdf</button>
+                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explication" class="btn btn-outline-secondary btn-block">Explication</button>
+                        <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                     </div>
-                </div>
-        </div>
-        <div class="col-sm-3 border m-2">
-                <div class="row" style="width:100%; height:50px;"></div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2">Pdf</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <button id="explication" class="btn btn-outline-secondary btn-block">Explication</button>
-                    </div>
-                </div>
-        </div>
-        <div class="col-sm-3 border m-2">
-            <div class="row" style="width:100%; height:50px;"></div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <button id="pdf" class="btn btn-outline-secondary btn-block mb-2">Pdf</button>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <button id="explication" class="btn btn-outline-secondary btn-block">Explication</button>
+
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">JAVA avancé</h6>
+                <div class="row" style="height:100px; background-image:url('<?php echo URL; ?>publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">SGBD</h6>
+                <div class="row" style="height:100px; background-image:url('<?php echo URL; ?>publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">SGBD</h6>
+                <div class="row" style="height:100px; background-image:url('<?php echo URL; ?>publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
         `;
         contenuselt.innerHTML = coursmodule4;
 

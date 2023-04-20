@@ -72,8 +72,8 @@ $mamy = $_SESSION["noms"];
             <button id ="contact" class="btn btn-outline-primary btn-block mt-2 mb-2">Contact</button>
         </div>
         <div class="col-7 col-sm-7">
-            <div   class="form-group shadow border p-4 mt-2" style="height:100%;  background-image:url('<?= URL; ?>publics/photos/livre.jpg'); background-size:cover; ">
-                <div id="contenu" class="content" style="overflow: auto;></div>
+            <div   class="form-group shadow border p-4 mt-2" style="height:400px; overflow-y:auto; scrollbar-width: thin ; background-image:url('<?= URL; ?>publics/photos/livre.jpg'); background-size:cover; ">
+                <div id="contenu" class="content" ></div>
             </div>
         </div>
         <div class="col-sm-1"></div>
@@ -87,14 +87,14 @@ $mamy = $_SESSION["noms"];
 </body>
 <footer>
     <div class="container">
-    <div class="row">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-7">
-            <p class="text-center mt-4" style="font-style:italic;">headquarter (siége sociale) : <span>Ambatobe</span></p>
-            <p class="text-center" style="font-style:italic;">Lot : 101- Antananarivo-Villa nambinina-27</p>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-7">
+                <p class="text-center mt-4" style="font-style:italic;">headquarter (siége sociale) : <span>Ambatobe</span></p>
+                <p class="text-center" style="font-style:italic;">Lot : 101- Antananarivo-Villa nambinina-27</p>
+            </div>
+            <div class="col-sm-1"></div>
         </div>
-        <div class="col-sm-1"></div>
     </div>
-    </div>
-    </footer>
+</footer>
 </html>
