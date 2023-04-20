@@ -74,64 +74,15 @@
             <div   class="form-group shadow border p-4 mt-2" style="height:400px; overflow-y:scroll; scrollbar-width: thin ;">
                 <div id="contenu" class="content">
 
-                            <div class="row ">
-                                <div class="col-sm-3 border m-2" style="background-color:white;">
-                                    <h6 class="text-center mt-2">HTML</h6>
-                                    <div class="row" style="height:100px; background-image:url('../publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3 border m-2">
-                                    <h6 class="text-center">HTML</h6>
-                                    <div class="row" style="height:100px; background-image:url('../publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3 border m-2">
-                                    <h6 class="text-center">HTML</h6>
-                                    <div class="row" style="height:100px; background-image:url('../publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-3 border m-2">
-                                    <h6 class="text-center">HTML</h6>
-                                    <div class="row" style="height:100px; background-image:url('../publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <!-- explicationvideo.addEventListener("click", function(){
+    var video = ` -->
+    <video  width="400px" height="200px" controls autoplay muted loop>
+        <source src ="../publics/photos/video.mkv" />
+    </video>
+    <!-- `;
+
+    contenuselt.innerHTML = video ;
+}); -->
                 </div>
                 <!-- <a href="<../views/paiement.php" class="btn btn-outline-primary btn-block">Payment</a>
                 <a href="<../views/paiement.php" class="btn btn-outline-primary btn-block">Payment</a>

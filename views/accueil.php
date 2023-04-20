@@ -11,6 +11,7 @@ $mamy = $_SESSION["noms"];
     <link rel="stylesheet" href="../publics/bs4/css/bootstrap.css" />
     <link rel="stylesheet" href="../publics/css/style.css" />
     <title>Plateform</title>
+    <!-- <meta name="baseUrl" content="<?= URL; ?>"> -->
 </head>
 <body>
 
@@ -84,6 +85,7 @@ $mamy = $_SESSION["noms"];
 <script src="<?= URL; ?>publics/js/jquery.js"></script>
 <script src="<?= URL; ?>publics/bs4/js/bootstrap.js"></script>
 <script src="<?= URL; ?>publics/js/accueil.js?<?= rand(1, 1000); ?>"></script>
+<script>var baseUrl = "<?= URL; ?>"</script>
 </body>
 <footer>
     <div class="container">

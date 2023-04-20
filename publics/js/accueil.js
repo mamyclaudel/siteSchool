@@ -210,9 +210,16 @@ var selt1 = document.getElementById('sel1');
 var selt2 = document.getElementById('sel2');
 var selt3 = document.getElementById('sel3');
 var contenuselt = document.getElementById("contenu");
+var explicationvideo = document.getElementsByClassName("btnexplication ");
 
+// var explivideo = `
+// <video  width="400px" height="200px" controls autoplay muted loop>
+// <source src ="../publics/photos/video.mkv" />
+// </video>
+// `;
 
 selt1.addEventListener("change", function(event){
+
     //console.log(this.value)
     
     if(this.value === "coursmodule1"){
@@ -220,10 +227,10 @@ selt1.addEventListener("change", function(event){
         <div class="row pl-2">
             <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
                 <h6 class="text-center mt-2">HTML</h6>
-                <div class="row" style="height:100px; background-image: url('<?php echo URL; ?>publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row" style="height:100px; background-image: url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
                     </div>
                 </div>
                 <div class="row">
@@ -235,10 +242,10 @@ selt1.addEventListener("change", function(event){
 
             <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
                 <h6 class="text-center mt-2">CSS</h6>
-                <div class="row" style="height:100px; background-image:url('../publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row" style="height:100px; background-image:url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
                     </div>
                 </div>
                 <div class="row">
@@ -250,12 +257,12 @@ selt1.addEventListener("change", function(event){
 
             <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
                 <h6 class="text-center mt-2">Framework</h6>
-                <div class="row" style="height:100px; background-image:url('../publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row" style="height:100px; background-image:url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
                     </div>
-                </div>
+                </div> 
                 <div class="row">
                     <div class="col-sm-12">
                         <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
@@ -265,10 +272,10 @@ selt1.addEventListener("change", function(event){
 
             <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
                 <h6 class="text-center mt-2">Responsive</h6>
-                <div class="row" style="height:100px; background-image:url('../publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row" style="height:100px; background-image:url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
                     </div>
                 </div>
                 <div class="row">
@@ -290,10 +297,10 @@ selt1.addEventListener("change", function(event){
             <div class="row pl-2">
                 <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
                     <h6 class="text-center mt-2">JavaScript</h6>
-                    <div class="row" style="height:100px; background-image:url('<?php echo URL; ?>publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                    <div class="row" style="height:100px; background-image:url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
                     <div class="row">
                         <div class="col-sm-12">
-                            <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
+                            <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
                         </div>
                     </div>
                     <div class="row">
@@ -313,10 +320,10 @@ selt1.addEventListener("change", function(event){
         <div class="row pl-2">
             <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
                 <h6 class="text-center mt-2">PHP</h6>
-                <div class="row" style="height:100px; background-image:url('<?php echo URL; ?>publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row" style="height:100px; background-image:url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
                     </div>
                 </div>
                 <div class="row">
@@ -328,10 +335,10 @@ selt1.addEventListener("change", function(event){
 
             <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
                 <h6 class="text-center mt-2">SGBD</h6>
-                <div class="row" style="height:100px; background-image:url('<?php echo URL; ?>publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row" style="height:100px; background-image:url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
                     </div>
                 </div>
                 <div class="row">
@@ -351,10 +358,10 @@ selt1.addEventListener("change", function(event){
         <div class="row pl-2">
             <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
                 <h6 class="text-center mt-2">PHP</h6>
-                <div class="row" style="height:100px; background-image:url('<?php echo URL; ?>publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row" style="height:100px; background-image:url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
                     </div>
                 </div>
                 <div class="row">
@@ -366,10 +373,10 @@ selt1.addEventListener("change", function(event){
 
             <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
                 <h6 class="text-center mt-2">JAVA avancé</h6>
-                <div class="row" style="height:100px; background-image:url('<?php echo URL; ?>publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row" style="height:100px; background-image:url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
                     </div>
                 </div>
                 <div class="row">
@@ -381,10 +388,10 @@ selt1.addEventListener("change", function(event){
 
             <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
                 <h6 class="text-center mt-2">SGBD</h6>
-                <div class="row" style="height:100px; background-image:url('<?php echo URL; ?>publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row" style="height:100px; background-image:url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
                     </div>
                 </div>
                 <div class="row">
@@ -396,10 +403,10 @@ selt1.addEventListener("change", function(event){
 
             <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
                 <h6 class="text-center mt-2">SGBD</h6>
-                <div class="row" style="height:100px; background-image:url('<?php echo URL; ?>publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row" style="height:100px; background-image:url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="pdf" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</button>
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
                     </div>
                 </div>
                 <div class="row">
