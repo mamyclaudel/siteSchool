@@ -7,6 +7,25 @@
         <link rel="stylesheet" href="../publics/bs4/css/bootstrap.css">
         <link rel="stylesheet" href="../publics/css/style.css">
     </head>
+
+    <style>
+        .spanbtn{
+            display:inline-block; 
+            color: white;
+            transition:
+            transform 0.15s ease-out, 
+            color 0.15s ease-out, 
+            background-color 0.15s ease-out;                                               
+        }
+        .btnpaiement{ 
+            display:inline-block;
+        }
+        .btnpaiement:hover{
+            transform: translate(-20px, -6px);
+            color:black;
+            background: #ff90e8;
+        }
+    </style>
     <body>
 
 
@@ -48,12 +67,12 @@
         <div class="col-sm-12 col-md-5">
             <h2 class="text-center text-muted mt-4 pb-4" style="font-weight:bold; font-family:time new roman; border-bottom-style:ridge;">Payment method : </h2>
                 <div class="modepaiement shadow border mt-4" style="margin-bottom:200px;">
-                    <button class="btn btn-block" style="font-weight:bold; background-color:green; color: white;" name="versement">Mvola</button>
-                    <button class="btn  btn-block " style="font-weight:bold; background-color:orange; color: white;" name="versement">OrangeMoney</button>
-                    <button  class="btn btn-danger btn-block " style="font-weight:bold; color: white;" name="versement">AirtelMoney</button>
-                    <button  class="btn btn-dark btn-block" style="font-weight:bold; color: white;"  name="versement">Westerne Union</button>
-                    <button  class="btn btn-primary btn-block versement" style="font-weight:bold; color: white;"  name="versement">Cheque Bancaire</button>
-                    <button  class="btn btn-primary btn-block mb-4 versement" style="font-weight:bold; color: white;"  name="versement">Virement Bancaire</button>
+                    <button class="btnpaiement btn btn-block" style="font-weight:bold; background-color:green; " name="versement"><span class="spanbtn">Mvola</span></button>
+                    <button class="btnpaiement btn  btn-block " style="font-weight:bold; background-color:orange; color: white;" name="versement"><span class="spanbtn">OrangeMoney</span></button>
+                    <button  class="btnpaiement btn btn-danger btn-block " style="font-weight:bold; color: white;" name="versement"><span class="spanbtn">AirtelMoney</span></button>
+                    <button  class="btnpaiement btn btn-dark btn-block" style="font-weight:bold; color: white;"  name="versement"><span class="spanbtn">Westerne Union</span></button>
+                    <button  class="btnpaiement btn btn-primary btn-block versement" style="font-weight:bold; color: white;"  name="versement"><span class="spanbtn">Cheque Bancaire</span></button>
+                    <button  class="btnpaiement btn btn-primary btn-block mb-4 versement" style="font-weight:bold; color: white;"  name="versement"><span class="spanbtn">Virement Bancaire</span></button>
                 </div>
         </div>
         <div class="col-md-1"></div>

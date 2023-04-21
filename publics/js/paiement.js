@@ -43,10 +43,10 @@ if(raison1.checked==true || raison2.checked==true || raison3.checked==true || ra
         <div class="row">
             <div class="col-6 col-sm-6 col-md-6"></div>
             <div class="col-3 col-md-3">
-                <input type="submit" class="btn btn-warning btn-block text-center mb-4" style="font-weight:bold;" name="btnvalider" value="Validate">        
+                <input type="submit" class="btnpaiement btn btn-warning btn-block text-center mb-4" style="font-weight:bold;" name="btnvalider" value="Validate">        
             </div>
             <div class="col-3 col-md-3">
-                <a href="../views/paiement.php" class="btn btn-danger btn-block text-center mb-4" style="font-weight:bold;" >Cancel</a>
+                <a href="../views/paiement.php" class="btnpaiement btn btn-danger btn-block text-center mb-4" style="font-weight:bold;" >Cancel</a>
             </div>
         </div>
         </form>
