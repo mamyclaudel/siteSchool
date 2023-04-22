@@ -160,7 +160,7 @@ contacts.addEventListener("click", function() {
     <h5 class="text-center text-primary pb-4" style="border-bottom-style:ridge; margin-bottom:4px; font-style:italic">ADMINISTRATION :</h5>
     <div class="row mt-4">
     <div class="col-sm-2"></div>
-    <div class="col-sm-1"><img style="width: 50px;" src="../publics/photos/phone.jpg" alt="phone"/></div>
+    <div class="col-sm-1"><img style="width: 50px;" src="${baseUrl}publics/photos/phone.jpg" alt="phone"/></div>
     <div class="col-sm-7">
     <a href="<tel:+261348658908" class="btn btn-primary btn-block">Call</a>
     </div>
@@ -168,7 +168,7 @@ contacts.addEventListener("click", function() {
 </div>
 <div class="row mt-2">
     <div class="col-sm-2"></div>
-    <div class="col-sm-1"><img style="width: 50px;" src="<?php echo URL; ?>publics/photos/mail.jpg" alt="mail"/></div>
+    <div class="col-sm-1"><img style="width: 50px;" src="${baseUrl}publics/photos/mail.jpg" alt="mail"/></div>
     <div class="col-sm-7">
     <a href="mailto:claudel.ceres.p4@gmail.com" class="btn btn-primary btn-block">Email</a>
     </div>
