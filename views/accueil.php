@@ -8,11 +8,18 @@ $mamy = $_SESSION["noms"];
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../publics/bs4/css/bootstrap.css" />
-    <link rel="stylesheet" href="../publics/css/style.css" />
+    <link rel="stylesheet" href="<?= URL; ?>publics/bs4/css/bootstrap.css" />
+    <link rel="stylesheet" href="<?= URL; ?>publics/css/style.css" />
     <title>Plateform</title>
     <!-- <meta name="baseUrl" content="<?= URL; ?>"> -->
 </head>
+<style>
+    .btnfermervideo:hover{
+    background-color: red;
+    color:white;
+    font-weight: bold;
+}
+</style>
 <body>
 
 <div class="container border shadow ">
@@ -41,7 +48,7 @@ $mamy = $_SESSION["noms"];
         </div>
         <div class="col-sm-1"></div>
     </div>
-    <div class="row">
+    <div class="row" id="row1accueil">
     <div class="col-sm-1"></div>
         <div class="col-5 col-sm-3 form-group shadow border p-4 mt-2">
             <button id ="home" class="btn btn-outline-primary btn-block mb-2">Home</button>

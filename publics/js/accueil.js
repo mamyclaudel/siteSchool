@@ -210,20 +210,14 @@ var selt1 = document.getElementById('sel1');
 var selt2 = document.getElementById('sel2');
 var selt3 = document.getElementById('sel3');
 var contenuselt = document.getElementById("contenu");
-var explicationvideo = document.getElementsByClassName("btnexplication ");
-
-// var explivideo = `
-// <video  width="400px" height="200px" controls autoplay muted loop>
-// <source src ="../publics/photos/video.mkv" />
-// </video>
-// `;
+var contenuvideo = document.getElementById("row1accueil");
 
 selt1.addEventListener("change", function(event){
 
     //console.log(this.value)
     
     if(this.value === "coursmodule1"){
-        var coursmodule1 = `<h2 class="text-center text-primary pb-4" style="border-bottom-style:ridge; margin-bottom:4px; font-style:italic, position:absolute;">LES COURS DU MODULE I :</h2>
+        var coursmodule1 = `<h2 id="azerty" class="text-center text-primary pb-4" style="border-bottom-style:ridge; margin-bottom:4px; font-style:italic, position:absolute;">LES COURS DU MODULE I :</h2>
         <div class="row pl-2">
             <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
                 <h6 class="text-center mt-2">HTML</h6>
@@ -235,7 +229,7 @@ selt1.addEventListener("change", function(event){
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                        <button id="explicationhtml" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                     </div>
                 </div>
             </div>
@@ -250,7 +244,7 @@ selt1.addEventListener("change", function(event){
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                        <button id="explicationcss" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                     </div>
                 </div>
             </div>
@@ -265,7 +259,7 @@ selt1.addEventListener("change", function(event){
                 </div> 
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                        <button id="explicationframework" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                     </div>
                 </div>
             </div>
@@ -280,14 +274,77 @@ selt1.addEventListener("change", function(event){
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                        <button id="explicationresponsive" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                     </div>
                 </div>
             </div>
-
         </div>
         `;
         contenuselt.innerHTML = coursmodule1;
+        var btnexpli = document.getElementById("explicationhtml");
+        btnexpli.addEventListener("click", function(){
+            var video = `
+            <div class="container">
+                <div class="row">
+                    <a href="${baseUrl}index.php?action=membre"><button class="btnfermervideo" style="font-weight: bold; border:none; position:absolute;z-index:10; top:128px; left:246px; height:20px; font-size:10px">X</button></a>
+                <div>
+                <div class="row">
+                    <video  width="240px" height="150px" controls autoplay muted loop style="position:absolute; z-index:1; top:120px;">
+                        <source src ="${baseUrl}publics/videos/video.mkv" />
+                    </video>
+                </div>
+            </div>`;
+            contenuselt.innerHTML = video;
+        });
+
+        var btnexpli = document.getElementById("explicationcss");
+        btnexpli.addEventListener("click", function(){
+            var video = `
+            <div class="container">
+                <div class="row">
+                    <a href="${baseUrl}index.php?action=membre"><button class="btnfermervideo" style="font-weight: bold; border:none; position:absolute;z-index:10;top:128px; left:246px; height:20px; font-size:10px">X</button></a>
+                <div>
+                <div class="row">
+                    <video  width="240px" height="150px" controls autoplay muted loop style="position:absolute; z-index:1; top:120px;">
+                        <source src ="${baseUrl}publics/videos/css.mkv" />
+                    </video>
+                </div>
+            </div>`;
+            contenuselt.innerHTML = video;
+        });
+
+        var btnexpli = document.getElementById("explicationframework");
+        btnexpli.addEventListener("click", function(){
+            var video = `
+            <div class="container">
+                <div class="row">
+                    <a href="${baseUrl}index.php?action=membre"><button class="btnfermervideo" style="font-weight: bold; border:none; position:absolute;z-index:10; top:128px; left:246px; height:20px; font-size:10px">X</button></a>
+                <div>
+                <div class="row">
+                    <video style="position:absolute; z-index:1; top:120px;"  width="240px" height="150px" controls autoplay muted loop>
+                        <source src ="${baseUrl}publics/videos/bootstrap.mkv" />
+                    </video>
+                </div>
+            </div>`;
+            contenuselt.innerHTML = video;
+        });
+
+        var btnexpli = document.getElementById("explicationresponsive");
+        btnexpli.addEventListener("click", function(){
+            var video = `
+            <div class="container">
+                <div class="row">
+                    <a href="${baseUrl}index.php?action=membre"><button class="btnfermervideo" style="font-weight: bold; border:none; position:absolute;z-index:10; top:128px; left:246px; height:20px; font-size:10px">X</button></a>
+                <div>
+                <div class="row">
+                    <video style="position:absolute; z-index:1; top:120px;"  width="240px" height="150px" controls autoplay muted loop>
+                        <source src ="${baseUrl}publics/videos/responsive.mkv" />
+                    </video>
+                </div>
+            </div>`;
+            contenuselt.innerHTML = video;
+        });
+
     }
 
     else if(this.value === "coursmodule2"){
@@ -305,13 +362,29 @@ selt1.addEventListener("change", function(event){
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
-                            <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                            <button id="explicationjs" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                         </div>
                     </div>
                 </div>
             </div>
         `;
         contenuselt.innerHTML = coursmodule2;
+
+        var btnexpli = document.getElementById("explicationjs");
+        btnexpli.addEventListener("click", function(){
+            var video = `
+            <div class="container">
+                <div class="row">
+                    <a href="${baseUrl}index.php?action=membre"><button class="btnfermervideo" style="font-weight: bold; border:none; position:absolute;z-index:10; top:128px; left:246px; height:20px; font-size:10px">X</button></a>
+                <div>
+                <div class="row">
+                    <video style="position:absolute; z-index:1; top:120px;"  width="240px" height="150px" controls autoplay muted loop>
+                        <source src ="${baseUrl}publics/videos/video.mkv" />
+                    </video>
+                </div>
+            </div>`;
+            contenuselt.innerHTML = video;
+        });
 
     }
 
@@ -328,7 +401,7 @@ selt1.addEventListener("change", function(event){
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                        <button id="explicationphp" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                     </div>
                 </div>
             </div>
@@ -343,13 +416,45 @@ selt1.addEventListener("change", function(event){
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                        <button id="explicationsgbd" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                     </div>
                 </div>
             </div>
         </div>
         `;
         contenuselt.innerHTML = coursmodule3;
+
+        var btnexpli = document.getElementById("explicationphp");
+        btnexpli.addEventListener("click", function(){
+            var video = `
+            <div class="container">
+                <div class="row">
+                    <a href="${baseUrl}index.php?action=membre"><button class="btnfermervideo" style="font-weight: bold; border:none; position:absolute;z-index:10; top:128px; left:246px; height:20px; font-size:10px">X</button></a>
+                <div>
+                <div class="row">
+                    <video style="position:absolute; z-index:1; top:120px;"  width="240px" height="150px" controls autoplay muted loop>
+                        <source src ="${baseUrl}publics/videos/video.mkv" />
+                    </video>
+                </div>
+            </div>`;
+            contenuselt.innerHTML = video;
+        });
+
+        var btnexpli = document.getElementById("explicationsgbd");
+        btnexpli.addEventListener("click", function(){
+            var video = `
+            <div class="container">
+                <div class="row">
+                    <a href="${baseUrl}index.php?action=membre"><button class="btnfermervideo" style="font-weight: bold; border:none; position:absolute;z-index:10; top:128px; left:246px; height:20px; font-size:10px">X</button></a>
+                <div>
+                <div class="row">
+                    <video style="position:absolute; z-index:1; top:120px;"  width="240px" height="150px" controls autoplay muted loop>
+                        <source src ="${baseUrl}publics/videos/video.mkv" />
+                    </video>
+                </div>
+            </div>`;
+            contenuselt.innerHTML = video;
+        });
 
     }
 
@@ -366,7 +471,7 @@ selt1.addEventListener("change", function(event){
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                        <button id="explicationphpmod4" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                     </div>
                 </div>
             </div>
@@ -381,7 +486,7 @@ selt1.addEventListener("change", function(event){
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                        <button id="explicationjavaavance" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                     </div>
                 </div>
             </div>
@@ -396,7 +501,7 @@ selt1.addEventListener("change", function(event){
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                        <button id="explicationsgbdmod4" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                     </div>
                 </div>
             </div>
@@ -411,13 +516,77 @@ selt1.addEventListener("change", function(event){
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explication" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                        <button id="explicationsgbdmod41" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                     </div>
                 </div>
             </div>
         </div>
         `;
         contenuselt.innerHTML = coursmodule4;
+
+        var btnexpli = document.getElementById("explicationphpmod4");
+        btnexpli.addEventListener("click", function(){
+            var video = `
+            <div class="container">
+                <div class="row">
+                    <a href="${baseUrl}index.php?action=membre"><button class="btnfermervideo" style="font-weight: bold; border:none; position:absolute;z-index:10; top:128px; left:246px; height:20px; font-size:10px">X</button></a>
+                <div>
+                <div class="row">
+                    <video style="position:absolute; z-index:1; top:120px;"  width="240px" height="150px" controls autoplay muted loop>
+                        <source src ="${baseUrl}publics/videos/video.mkv" />
+                    </video>
+                </div>
+            </div>`;
+            contenuselt.innerHTML = video;
+        });
+
+        var btnexpli = document.getElementById("explicationjavaavance");
+        btnexpli.addEventListener("click", function(){
+            var video = `
+            <div class="container">
+                <div class="row">
+                    <a href="${baseUrl}index.php?action=membre"><button class="btnfermervideo" style="font-weight: bold; border:none; position:absolute;z-index:10; top:40px; left:246px; height:20px; font-size:10px">X</button></a>
+                <div>
+                <div class="row">
+                    <video style="position:absolute; z-index:1; top:120px;"  width="240px" height="150px" controls autoplay muted loop>
+                        <source src ="${baseUrl}publics/videos/video.mkv" />
+                    </video>
+                </div>
+            </div>`;
+            contenuselt.innerHTML = video;
+        });
+
+        var btnexpli = document.getElementById("explicationsgbdmod4");
+        btnexpli.addEventListener("click", function(){
+            var video = `
+            <div class="container">
+                <div class="row">
+                    <a href="${baseUrl}index.php?action=membre"><button class="btnfermervideo" style="font-weight: bold; border:none; position:absolute;z-index:10; top:128px; left:246px; height:20px; font-size:10px">X</button></a>
+                <div>
+                <div class="row">
+                    <video style="position:absolute; z-index:1; top:120px;"  width="240px" height="150px" controls autoplay muted loop>
+                        <source src ="${baseUrl}publics/videos/video.mkv" />
+                    </video>
+                </div>
+            </div>`;
+            contenuselt.innerHTML = video;
+        });
+
+        var btnexpli = document.getElementById("explicationsgbdmod41");
+        btnexpli.addEventListener("click", function(){
+            var video = `
+            <div class="container">
+                <div class="row">
+                    <a href="${baseUrl}index.php?action=membre"><button class="btnfermervideo" style="font-weight: bold; border:none; position:absolute;z-index:10; top:128px; left:246px; height:20px; font-size:10px">X</button></a>
+                <div>
+                <div class="row">
+                    <video style="position:absolute; z-index:1; top:120px;"  width="240px" height="150px" controls autoplay muted loop>
+                        <source src ="${baseUrl}publics/videos/video.mkv" />
+                    </video>
+                </div>
+            </div>`;
+            contenuselt.innerHTML = video;
+        });
 
     }
 });
@@ -428,36 +597,113 @@ selt2.addEventListener("change", function(){
 
     if(this.value==="exomodule1"){
         var exomodule1 =`<h2 class="text-center text-primary pb-4" style="border-bottom-style:ridge; margin-bottom:4px; font-style:italic">LES EXERCICES DU MODULE I :</h2>
-        <div>
-            <ul>
-            </ul> 
+        <div class="row pl-2">
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">HTML</h6>
+                <div class="row" style="height:100px; background-image: url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">CSS</h6>
+                <div class="row" style="height:100px; background-image: url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">Responsive</h6>
+                <div class="row" style="height:100px; background-image: url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">Bootstrap</h6>
+                <div class="row" style="height:100px; background-image: url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
+                    </div>
+                </div>
+            </div>
         </div>
         `;
         contenuselt.innerHTML = exomodule1;
     }
     else if(this.value==="exomodule2"){
         var exomodule2 =`<h2 class="text-center text-primary pb-4" style="border-bottom-style:ridge; margin-bottom:4px; font-style:italic">LES EXERCICES DU MODULE II :</h2>
-        <div>
-            <ul>
-            </ul> 
+        <div class="row pl-2">
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">To Do List</h6>
+                <div class="row" style="height:100px; background-image: url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
+                    </div>
+                </div>
+            </div>
         </div>
         `;
         contenuselt.innerHTML = exomodule2;
     }
     else if(this.value==="exomodule3"){
         var exomodule3 =`<h2 class="text-center text-primary pb-4" style="border-bottom-style:ridge; margin-bottom:4px; font-style:italic">LES EXERCICES DU MODULE III :</h2>
-        <div>
-            <ul>
-            </ul> 
+        <div class="row pl-2">
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">CRUD</h6>
+                <div class="row" style="height:100px; background-image: url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
+                    </div>
+                </div>
+            </div>
         </div>
         `;
         contenuselt.innerHTML = exomodule3;
     }
     if(this.value==="exomodule4"){
         var exomodule4 =`<h2 class="text-center text-primary pb-4" style="border-bottom-style:ridge; margin-bottom:4px; font-style:italic">LES EXERCICES DU MODULE IV :</h2>
-        <div>
-            <ul>
-            </ul> 
+        <div class="row pl-2">
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">PHP</h6>
+                <div class="row" style="height:100px; background-image: url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">JAVA avancé</h6>
+                <div class="row" style="height:100px; background-image: url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">SGBD</h6>
+                <div class="row" style="height:100px; background-image: url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
+                    </div>
+                </div>
+            </div>
         </div>
         `;
         contenuselt.innerHTML = exomodule4;
@@ -471,36 +717,113 @@ selt3.addEventListener("change", function(){
 
     if(this.value==="correctionmodule1"){
         var correctionmodule1 = `<h2 class="text-center text-primary pb-4" style="border-bottom-style:ridge; margin-bottom:4px; font-style:italic">LES CORRECTIONS DU MODULE I :</h2>
-        <div>
-            <ul>
-            </ul> 
+        <div class="row pl-2">
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">HTML</h6>
+                <div class="row" style="height:100px; background-image: url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">CSS</h6>
+                <div class="row" style="height:100px; background-image: url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">Responsive</h6>
+                <div class="row" style="height:100px; background-image: url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">Bootstrap</h6>
+                <div class="row" style="height:100px; background-image: url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
+                    </div>
+                </div>
+            </div>
         </div>
         `;
         contenuselt.innerHTML = correctionmodule1
     }
     else if(this.value==="correctionmodule2"){
         var correctionmodule2 = `<h2 class="text-center text-primary pb-4" style="border-bottom-style:ridge; margin-bottom:4px; font-style:italic">LES CORRECTIONS DU MODULE II :</h2>
-        <div>
-            <ul>
-            </ul> 
+        <div class="row pl-2">
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">To Do List</h6>
+                <div class="row" style="height:100px; background-image: url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
+                    </div>
+                </div>
+            </div>
         </div>
         `;
         contenuselt.innerHTML = correctionmodule2
     }
     else if(this.value==="correctionmodule3"){
         var correctionmodule3 = `<h2 class="text-center text-primary pb-4" style="border-bottom-style:ridge; margin-bottom:4px; font-style:italic">LES CORRECTIONS DU MODULE III :</h2>
-        <div>
-            <ul>
-            </ul> 
+        <div class="row pl-2">
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">CRUD</h6>
+                <div class="row" style="height:100px; background-image: url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
+                    </div>
+                </div>
+            </div>
         </div>
         `;
         contenuselt.innerHTML = correctionmodule3
     }
     else if(this.value==="correctionmodule4"){
         var correctionmodule4 = `<h2 class="text-center text-primary pb-4" style="border-bottom-style:ridge; margin-bottom:4px; font-style:italic">LES CORRECTIONS DU MODULE IV :</h2>
-        <div>
-            <ul>
-            </ul> 
+        <div class="row pl-2">
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">PHP</h6>
+                <div class="row" style="height:100px; background-image: url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">JAVA avancé</h6>
+                <div class="row" style="height:100px; background-image: url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 border m-2" style="background-color:white; border-radius:5%;">
+                <h6 class="text-center mt-2">SGBD</h6>
+                <div class="row" style="height:100px; background-image: url('${baseUrl}publics/photos/pdf.png'); background-size:contain; background-repeat: no-repeat; background-position: center; "></div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <a id="pdf" href="${baseUrl}publics/photos/java.pdf" title="Ouvrir le fichier" class="btn btn-outline-secondary btn-block mb-2 mt-2">Pdf</a>
+                    </div>
+                </div>
+            </div>
         </div>
         `;
         contenuselt.innerHTML = correctionmodule4

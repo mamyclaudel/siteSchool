@@ -3,6 +3,7 @@ include 'controls/connexion.php';
 session_start();
 
 $erreur = "";
+$_SESSION["erreur"] = $erreur;
 
 if(isset($_POST["btncreate"])){
     header("Location: index.php?action=nouveau");
@@ -24,13 +25,14 @@ else if(isset($_POST["btnconnect"])){
                     $_SESSION["noms"] = $data["nom"];
                     $_SESSION["pdpx"] = $data["photo"]; 
                     $_SESSION["ids"] = $data["id"];
-
+                    
                     echo  $_SESSION["pdp"] ;
                     header("Location: index.php?action=membre");
-                }else{
-                    echo $erreur=  erreur;
-                    header("Location: index.php?action=nonmembre");
                 }
+            }else if($row <= 0){
+                $erreur = "Please verify your information!";
+                $_SESSION["erreur"] = $erreur;
+                header("Location: index.php?action=nonmembre");
             }
         }
 

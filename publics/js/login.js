@@ -1,7 +1,6 @@
 
 var afficher = document.getElementById("showpwd");
-
-afficher.addEventListener("change", function(){
+const onToggleshowPassword = () =>{
     var pwd = document.getElementById("password");
 
     if( afficher.checked){
@@ -10,4 +9,7 @@ afficher.addEventListener("change", function(){
     }else{
         pwd.setAttribute("type", "password");
     }
-});
+}
+
+afficher.addEventListener("change", onToggleshowPassword);
+
