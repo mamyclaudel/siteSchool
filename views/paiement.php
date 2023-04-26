@@ -9,6 +9,17 @@
     </head>
 
     <style>
+
+        label:hover{
+            font-weight:bold;
+            font-style:italic;
+            border:2px solid black;
+        }
+
+        #autres:hover{
+            border:2px solid black;
+        }
+
         .spanbtn{
             display:inline-block; 
             color: white;
@@ -25,6 +36,7 @@
             color:black;
             background: #ff90e8;
         }
+
     </style>
     <body>
 
@@ -45,19 +57,19 @@
         <div class="col-sm-12 col-md-5">
         <h2 class="text-center text-muted mt-4 pb-4" style="font-weight:bold; font-family:time new roman; border-bottom-style:ridge;">Reasons for payment : </h2>
             <form class="form-groupe form" id="paiement" action="" method="POST">
-                <label class="form-check-label form-control mb-2 mt-4">
+                <label class="form-check-label form-control mb-2 mt-4" style="cursor: pointer;">
                     <input type="checkbox" class="form-check-input droit1"  name="droit" value="inscription"> Registration fees (droit d'inscription) 150 000 Ariary
                 </label>
-                <label class="form-check-label form-control mb-2">
+                <label class="form-check-label form-control mb-2" style="cursor: pointer;">
                     <input type="checkbox" class="form-check-input droit2"  name="droit" value="ecolage"> Monthly tuition (écolage mensuelle) 90 000 Ariary
                 </label>
-                <label class="form-check-label form-control mb-2">
+                <label class="form-check-label form-control mb-2" style="cursor: pointer;">
                     <input type="checkbox" class="form-check-input droit3"  name="droit" value="examen"> Examination fee (droit d'éxamen) 30 000 Ariary
                 </label>
-                <label class="form-check-label form-control mb-2">
+                <label class="form-check-label form-control mb-2" style="cursor: pointer;">
                     <input type="checkbox" class="form-check-input droit4"  name="droit" value="certificat"> School certificate (cértificat de scolarité) 15 000 Ariary
                 </label>
-                <input type="text" id ="autres" class="form-control" name="droit" placeholder="Others..."> 
+                <input type="text" id ="autres" class="form-control" name="droit" placeholder="Others..." style="cursor: pointer;"> 
             </form> 
             <div class="col-sm-12" id="erreur"></div>
             
