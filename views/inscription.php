@@ -32,6 +32,9 @@
                 <input type="text" class="form-control mb-2" name="prenom" id="prenom" placeholder="Your first name" required>
                 <input type="text" class="form-control mb-2" name="mail" id="mail" placeholder="Pseudo or mail" required>
                 <input type="password" class="form-control mb-2" name="password" id="password" placeholder="Password" required>
+                <label class="form-check-label" style="font-style: italic; font-family:time new roman; cursor: pointer;">
+                    <input type="checkbox"  name="showpwd" id="showpwd" value ="show" > Show password
+                </label></br>
                 <label for="photo" class="text-muted" style="font-weight:bold;">Recent photo : </label> 
                 <input type="file" class="form-control mb-2" name="photo" id="photo" required>
                 <label for="date" class="text-muted" style="font-weight:bold;">Registration date : </label> 
@@ -102,10 +105,10 @@
                     </div>
                 </div>
                 <input type="submit" class="btn btn-warning btn-block" style="font-weight:bold;" name="btnregister" value="Register">
-                <a href="../views/login.php" class="btn btn-outline-danger btn-block mt-2" style="margin-bottom:50px;">Cancel</a>
+                <a href="<?php echo URL; ?>views/inscription.php" class="btn btn-outline-danger btn-block mt-2" style="margin-bottom:50px;">Cancel</a>
             </form>
         </div>
-        <div class="col-sm-4 mt-4 border" style="width:100%; height:480px; background-image:url('<?php echo URL; ?>publics/photos/étudiante.png'); background-size:cover; backgroung-position:center; background-repeat:no-repeat; border-radius:3%"></div>
+        <div class="col-sm-4 mt-4 border" style="width:100%; height:480px; background-image:url('%publics/photos/étudiante.png'); background-size:cover; backgroung-position:center; background-repeat:no-repeat; border-radius:3%"></div>
         <div class="col-sm-2"></div>
     </div>
 </div>

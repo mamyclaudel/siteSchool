@@ -60,12 +60,13 @@ try{
 function insert($nom, $prenom, $mail, $pwd, $pdp, $date){
     global $con, $image;
     $con->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
-    $insert= $con->prepare("INSERT INTO `student`( `nom`, `prenom`, `email`, `password`, `photo`, `date`) VALUES (?, ?, ?, ?, ?, ?)");
+    $insert= $con->prepare("INSERT INTO `student`( `id`, `nom`, `prenom`, `email`, `password`, `photo`, `date`) VALUES (?, ?, ?, ?, ?, ?, ?)");
     $res = $insert->execute([$nom, $prenom, $mail, $pwd, $image, $date]);
-
+    $data = $insert->fetch();
 
     $_SESSION["noms"] = $nom;
     $_SESSION["pdpx"] = $image; 
+    $_SESSION["ids"] = $data['id'];
     // var_dump( $res);
     // echo "\nPDO::errorInfo():\n";
     // print_r($con->errorInfo());

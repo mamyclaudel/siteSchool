@@ -21,7 +21,6 @@ $mamy = $_SESSION["noms"];
 }
 </style>
 <body>
-
 <div class="container border shadow ">
     <div class="row" style=" z-index:1000; display:absolute;">
             <div class="col-sm-1 col-md-1">

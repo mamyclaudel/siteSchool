@@ -229,7 +229,7 @@ selt1.addEventListener("change", function(event){
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explicationhtml" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                        <button id="explicationhtml" class="btn btn-outline-secondary btn-block mb-2" title="Ouvrir la video d'explication">Explication</button>
                     </div>
                 </div>
             </div>
@@ -244,7 +244,7 @@ selt1.addEventListener("change", function(event){
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explicationcss" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                        <button id="explicationcss" class="btn btn-outline-secondary btn-block mb-2" title="Ouvrir la video d'explication">Explication</button>
                     </div>
                 </div>
             </div>
@@ -259,7 +259,7 @@ selt1.addEventListener("change", function(event){
                 </div> 
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explicationframework" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                        <button title="Ouvrir la video d'explication" id="explicationframework" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                     </div>
                 </div>
             </div>
@@ -274,7 +274,7 @@ selt1.addEventListener("change", function(event){
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explicationresponsive" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                        <button title="Ouvrir la video d'explication" id="explicationresponsive" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                     </div>
                 </div>
             </div>
@@ -362,7 +362,7 @@ selt1.addEventListener("change", function(event){
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
-                            <button id="explicationjs" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                            <button title="Ouvrir la video d'explication" id="explicationjs" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                         </div>
                     </div>
                 </div>
@@ -401,7 +401,7 @@ selt1.addEventListener("change", function(event){
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explicationphp" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                        <button title="Ouvrir la video d'explication" id="explicationphp" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                     </div>
                 </div>
             </div>
@@ -416,7 +416,7 @@ selt1.addEventListener("change", function(event){
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explicationsgbd" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                        <button title="Ouvrir la video d'explication" id="explicationsgbd" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                     </div>
                 </div>
             </div>
@@ -471,7 +471,7 @@ selt1.addEventListener("change", function(event){
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explicationphpmod4" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                        <button title="Ouvrir la video d'explication" id="explicationphpmod4" class="btn btn-outline-secondary btn-block mb-2 ">Explication</button>
                     </div>
                 </div>
             </div>
@@ -486,7 +486,7 @@ selt1.addEventListener("change", function(event){
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explicationjavaavance" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                        <button title="Ouvrir la video d'explication" id="explicationjavaavance" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                     </div>
                 </div>
             </div>
@@ -501,7 +501,7 @@ selt1.addEventListener("change", function(event){
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explicationsgbdmod4" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                        <button title="Ouvrir la video d'explication" id="explicationsgbdmod4" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                     </div>
                 </div>
             </div>
@@ -516,7 +516,7 @@ selt1.addEventListener("change", function(event){
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button id="explicationsgbdmod41" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
+                        <button title="Ouvrir la video d'explication" id="explicationsgbdmod41" class="btn btn-outline-secondary btn-block mb-2">Explication</button>
                     </div>
                 </div>
             </div>
