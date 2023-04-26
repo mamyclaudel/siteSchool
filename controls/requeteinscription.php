@@ -61,12 +61,19 @@ function insert($nom, $prenom, $mail, $pwd, $pdp, $date){
     global $con, $image;
     $con->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING );
     $insert= $con->prepare("INSERT INTO `student`( `id`, `nom`, `prenom`, `email`, `password`, `photo`, `date`) VALUES (?, ?, ?, ?, ?, ?, ?)");
-    $res = $insert->execute([$nom, $prenom, $mail, $pwd, $image, $date]);
-    $data = $insert->fetch();
+    $res = $insert->execute([null, $nom, $prenom, $mail, $pwd, $image, $date]);
+    
+    
+    $select = $con->prepare("SELECT `id` FROM `student` WHERE `nom`=?");
+    $result = $select->execute([$nom]);
+    $data = $select->fetch();
+    $row = $select->rowCount();
 
-    $_SESSION["noms"] = $nom;
-    $_SESSION["pdpx"] = $image; 
-    $_SESSION["ids"] = $data['id'];
+    if($row>0){
+        $_SESSION["noms"] = $nom;
+        $_SESSION["pdpx"] = $image; 
+        $_SESSION["ids"] = $data['id'];
+    }
     // var_dump( $res);
     // echo "\nPDO::errorInfo():\n";
     // print_r($con->errorInfo());

@@ -27,7 +27,6 @@
         }
     </style>
     <body>
-    <?php var_dump($_SESSION); ?>
 
 <div class="container border shadow ">
     <div class="row" style=" z-index:1000;">

@@ -26,7 +26,7 @@ if(isset($_GET["action"])){
         include("controls/versement.php");
     }
     else if($_GET["action"]=="paiement_recus"){
-        include("views/paiement.php");
+        header("Location: http://127.0.0.1:80/Revision/views/paiement.php");
     }
 
 

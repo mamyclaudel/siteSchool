@@ -108,11 +108,11 @@
                 <a href="<?php echo URL; ?>views/inscription.php" class="btn btn-outline-danger btn-block mt-2" style="margin-bottom:50px;">Cancel</a>
             </form>
         </div>
-        <div class="col-sm-4 mt-4 border" style="width:100%; height:480px; background-image:url('%publics/photos/étudiante.png'); background-size:cover; backgroung-position:center; background-repeat:no-repeat; border-radius:3%"></div>
+        <div class="col-sm-4 mt-4 border" style="width:100%; height:480px; background-image:url('<?php echo URL; ?>publics/photos/étudiante.png'); background-size:cover; backgroung-position:center; background-repeat:no-repeat; border-radius:3%"></div>
         <div class="col-sm-2"></div>
     </div>
 </div>
-
+<?php var_dump($_SESSION["ids"]); ?>
 <script src="<?php echo URL; ?>publics/js/jquery.js"></script>
 <script src="<?php echo URL; ?>puplics/bs4/js/bootstrap.js"></script>
 <script src="../publics/js/paiement.js?<?php echo rand(1, 1000); ?>"></script>
