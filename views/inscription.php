@@ -27,7 +27,7 @@
         <div class="col-sm-2"></div>
         <div class="col-sm-4">
             <h2 class="text-center text-muted mt-4">Registration</h2>
-            <form action="<?php echo URL; ?>index.php?action=registration" method="POST" class="form-group " enctype="multipart/form-data">
+            <form action="../index.php?action=registration" method="POST" class="form-group " enctype="multipart/form-data">
                 <input type="text" class="form-control mb-2 mt-4" name="nom" id="nom" placeholder="Your name" required>
                 <input type="text" class="form-control mb-2" name="prenom" id="prenom" placeholder="Your first name" required>
                 <input type="text" class="form-control mb-2" name="mail" id="mail" placeholder="Pseudo or mail" required>
@@ -105,10 +105,10 @@
                     </div>
                 </div>
                 <input type="submit" class="btn btn-warning btn-block" style="font-weight:bold;" name="btnregister" value="Register">
-                <a href="<?php echo URL; ?>views/inscription.php" class="btn btn-outline-danger btn-block mt-2" style="margin-bottom:50px;">Cancel</a>
+                <a href="../views/inscription.php" class="btn btn-outline-danger btn-block mt-2" style="margin-bottom:50px;">Cancel</a>
             </form>
         </div>
-        <div class="col-sm-4 mt-4 border" style="width:100%; height:480px; background-image:url('<?php echo URL; ?>publics/photos/étudiante.png'); background-size:cover; backgroung-position:center; background-repeat:no-repeat; border-radius:3%"></div>
+        <div class="col-sm-4 mt-4 border" style="width:100%; height:480px; background-image:url('../publics/photos/étudiante.png'); background-size:cover; backgroung-position:center; background-repeat:no-repeat; border-radius:3%"></div>
         <div class="col-sm-2"></div>
     </div>
 </div>

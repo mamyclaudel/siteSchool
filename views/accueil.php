@@ -8,8 +8,8 @@ $mamy = $_SESSION["noms"];
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?= URL; ?>publics/bs4/css/bootstrap.css" />
-    <link rel="stylesheet" href="<?= URL; ?>publics/css/style.css" />
+    <link rel="stylesheet" href="../publics/bs4/css/bootstrap.css" />
+    <link rel="stylesheet" href="../publics/css/style.css" />
     <title>Plateform</title>
     <!-- <meta name="baseUrl" content="<?= URL; ?>"> -->
 </head>
@@ -36,14 +36,14 @@ $mamy = $_SESSION["noms"];
     <div class="row">
         <div class="col-sm-1"></div>
         <div class="col-sm-3">
-            <img class="shadow mt-4" style="border:5px solid white;border-radius:50%; height: 120px; width: 100px;" src="<?php URL ; ?>publics/photos/<?php echo $_SESSION["pdpx"]; ?>" alt="Photo">
+            <img class="shadow mt-4" style="border:5px solid white;border-radius:50%; height: 120px; width: 100px;" src="../publics/photos/<?php echo $_SESSION["pdpx"]; ?>" alt="Photo">
             <h6 class="mt-2" style="font-style:italic; font-family:timenew roman; font-weight:bold;"><?php echo $_SESSION["noms"]; ?></h6>
         </div>
         <div class="col-sm-6">
             <h2 class="text-center text-muted mt-4">Welcome dear Student </h2>
             <p class="text-center" style="font-size: 20px; font-style:italic;">"The study is a good legacy"</p>
         </div>
-        <div class="col-sm-1 mt-4" id="logo" style="height:100px;  background-image:url('<?= URL; ?>publics/photos/logo.png'); background-size:cover; backgroung-position:center; background-repeat:no-repeat; border-radius:3%">
+        <div class="col-sm-1 mt-4" id="logo" style="height:100px;  background-image:url('../publics/photos/logo.png'); background-size:cover; backgroung-position:center; background-repeat:no-repeat; border-radius:3%">
         </div>
         <div class="col-sm-1"></div>
     </div>
@@ -74,12 +74,12 @@ $mamy = $_SESSION["noms"];
                     <option value="correctionmodule3">Module 3</option>
                     <option value="correctionmodule4">Module 4</option>
                 </select>
-                <a href="<?= URL; ?>views/paiement.php" class="btn btn-outline-primary btn-block">Payment</a>
+                <a href="../views/paiement.php" class="btn btn-outline-primary btn-block">Payment</a>
             </form>
             <button id ="contact" class="btn btn-outline-primary btn-block mt-2 mb-2">Contact</button>
         </div>
         <div class="col-7 col-sm-7">
-            <div   class="form-group shadow border p-4 mt-2" style="height:400px; overflow-y:auto; scrollbar-width: thin ; background-image:url('<?= URL; ?>publics/photos/livre.jpg'); background-size:cover; ">
+            <div   class="form-group shadow border p-4 mt-2" style="height:400px; overflow-y:auto; scrollbar-width: thin ; background-image:url('../publics/photos/livre.jpg'); background-size:cover; ">
                 <div id="contenu" class="content" ></div>
             </div>
         </div>
@@ -88,9 +88,9 @@ $mamy = $_SESSION["noms"];
 </div>
 
 
-<script src="<?= URL; ?>publics/js/jquery.js"></script>
-<script src="<?= URL; ?>publics/bs4/js/bootstrap.js"></script>
-<script src="<?= URL; ?>publics/js/accueil.js?<?= rand(1, 1000); ?>"></script>
+<script src="../publics/js/jquery.js"></script>
+<script src="../publics/bs4/js/bootstrap.js"></script>
+<script src="../publics/js/accueil.js?<?= rand(1, 1000); ?>"></script>
 <script>var baseUrl = "<?= URL; ?>"</script>
 </body>
 <footer>
