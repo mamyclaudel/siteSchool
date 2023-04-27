@@ -112,7 +112,6 @@
         <div class="col-sm-2"></div>
     </div>
 </div>
-<?php var_dump($_SESSION["ids"]); ?>
 <script src="<?php echo URL; ?>publics/js/jquery.js"></script>
 <script src="<?php echo URL; ?>puplics/bs4/js/bootstrap.js"></script>
 <script src="../publics/js/paiement.js?<?php echo rand(1, 1000); ?>"></script>
