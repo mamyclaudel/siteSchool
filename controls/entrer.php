@@ -6,7 +6,7 @@ $erreur = "";
 $_SESSION["erreur"] = $erreur;
 
 if(isset($_POST["btncreate"])){
-    header("Location: index.php?action=nouveau");
+    header("Location: views/inscription.php?action=nouveau");
 }
 
 else if(isset($_POST["btnconnect"])){
@@ -27,12 +27,12 @@ else if(isset($_POST["btnconnect"])){
                     $_SESSION["ids"] = $data["id"];
                     
                     echo  $_SESSION["pdp"] ;
-                    header("Location: index.php?action=membre");
+                    header("Location: views/accueil.php?action=membre");
                 }
             }else if($row <= 0){
                 $erreur = "Please verify your information!";
                 $_SESSION["erreur"] = $erreur;
-                header("Location: index.php?action=nonmembre");
+                header("Location: index.html?action=nonmembre");
             }
         }
 
